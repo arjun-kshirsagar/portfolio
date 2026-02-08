@@ -1,11 +1,15 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-16 md:py-24">
       {/* 1. Hero */}
       <section>
-        <h1 className="text-2xl mb-4">Arjun Kshirsagar</h1>
+        <div className="flex justify-between items-start mb-4">
+          <h1 className="text-2xl">Arjun Kshirsagar</h1>
+          <ThemeToggle />
+        </div>
         <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
           Backend engineer in the making. Systems &gt; syntax.
           <br />
@@ -32,7 +36,7 @@ export default function Home() {
       {/* 3. Projects */}
       <section>
         <h2 className="text-lg mb-6 border-b border-gray-200 dark:border-gray-800 pb-2">Projects</h2>
-        
+
         <div className="space-y-12">
           <div>
             <h3 className="text-md font-bold mb-2">Anno-tex (2025)</h3>
@@ -97,19 +101,19 @@ export default function Home() {
         <h2 className="text-lg mb-4 border-b border-gray-200 dark:border-gray-800 pb-2">Roadmap (2025–2026)</h2>
         <ul className="space-y-2 text-sm">
           <li className="flex items-center gap-2">
-            <input type="checkbox" readOnly checked className="accent-black" /> 
+            <input type="checkbox" readOnly checked className="accent-black" />
             <span>Master database internals (LSM Trees, B-Trees)</span>
           </li>
           <li className="flex items-center gap-2">
-            <input type="checkbox" readOnly className="accent-black" /> 
+            <input type="checkbox" readOnly className="accent-black" />
             <span>Ship 2 infra-heavy side projects</span>
           </li>
           <li className="flex items-center gap-2">
-            <input type="checkbox" readOnly className="accent-black" /> 
+            <input type="checkbox" readOnly className="accent-black" />
             <span>Write 5 deep-dive technical blogs</span>
           </li>
           <li className="flex items-center gap-2">
-            <input type="checkbox" readOnly className="accent-black" /> 
+            <input type="checkbox" readOnly className="accent-black" />
             <span>Contribute to an open-source data engine</span>
           </li>
         </ul>
@@ -119,10 +123,10 @@ export default function Home() {
       <section className="mt-12">
         <h2 className="text-lg mb-4 border-b border-gray-200 dark:border-gray-800 pb-2">Contact</h2>
         <div className="flex gap-4 text-sm">
-          <Link href="https://github.com/arjun-kshirsagar">GitHub</Link>
-          <Link href="https://linkedin.com/in/arjun-kshirsagar">LinkedIn</Link>
-          <Link href="/resume.pdf" target="_blank">Resume (PDF)</Link>
-          <Link href="mailto:arjun.dev2025@gmail.com">Email</Link>
+          <Link href="https://github.com/arjun-kshirsagar" target="_blank" rel="noopener noreferrer">GitHub</Link>
+          <Link href="https://linkedin.com/in/arjunkshirsagar" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</Link>
+          <Link href="mailto:arjun.dev2025@gmail.com" target="_blank" rel="noopener noreferrer">Email</Link>
         </div>
         <p className="mt-6 text-xs text-gray-500">
           If you like serious systems or boring tech done right — reach out.
