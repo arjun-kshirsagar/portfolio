@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Providers>
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
