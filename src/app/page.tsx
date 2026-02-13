@@ -26,8 +26,8 @@ export default function Home() {
       <section>
         <h2 className="text-lg mb-4 border-b border-gray-200 dark:border-gray-800 pb-2">Now</h2>
         <ul className="space-y-2 text-sm">
-          <li>📍 Based in India</li>
-          <li>🎯 Goal: Scaling reporting infra at Wealthy.in</li>
+          <li>📍 Based in Bengaluru, India</li>
+          <li>🎯 Goal: Building high-performance data infrastructure</li>
           <li>🧠 Learning: ClickHouse internals &amp; storage engines</li>
           <li>🏋️ Training: Improving consistency in the gym</li>
         </ul>
@@ -40,9 +40,9 @@ export default function Home() {
           <div className="pl-6 relative">
             <div className="absolute w-3 h-3 bg-gray-400 dark:bg-gray-500 rounded-full -left-[6.5px] top-1.5" />
             <h3 className="text-sm font-bold">SDE 1 — Wealthy.in</h3>
-            <p className="text-xs text-gray-500 mb-2">2025 — Present</p>
+            <p className="text-xs text-gray-500 mb-2">Feb 2025 — Aug 2025</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Scaling production reporting systems and backend analytics infra.
+              Scaled production reporting systems and backend analytics infra.
             </p>
           </div>
           <div className="pl-6 relative">
